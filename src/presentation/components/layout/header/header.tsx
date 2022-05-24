@@ -20,7 +20,7 @@ const Header: React.FC = () => {
                 <MenuItem to='/about' color={getColorStateByPath('/about')}>About</MenuItem>
                 <MenuItem to='/products' color={getColorStateByPath('/products')}>Products</MenuItem>
                 <LeaftIcon src={Leaft}/>
-                <MenuItem to='/recips' color={getColorStateByPath('/recips')}>Recipes</MenuItem>
+                <MenuItem to='/recipes' color={getColorStateByPath('/recipes')}>Recipes</MenuItem>
                 <MenuItem to='/faq' color={getColorStateByPath('/faq')}>FAQ</MenuItem>
                 <MenuItem to='/help' color={getColorStateByPath('/help')}>Help</MenuItem>
             </StyledHeader>
