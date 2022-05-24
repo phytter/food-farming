@@ -60,7 +60,7 @@ export  const Icon = styled(CgArrowRight, {
 
 export const LeaftIcon = styled('img', {
     height: 50,
-    margin: '0px 30px'
+    marginLeft: 30
 })
 
 export const H3andIcon = styled('div', {
