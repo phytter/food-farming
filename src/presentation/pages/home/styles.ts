@@ -41,7 +41,6 @@ export const ReadMoreButton = styled('button', {
 export const TextButton = styled('div', {
     display: 'inline-flex',
     fontFamily: 'monospace',
-    userSelect: 'none',
     alignItems: 'center',
     height: '100%',
     textAlign: 'center',

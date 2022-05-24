@@ -12,7 +12,6 @@ export const StyledHeader = styled('header', {
 
 export const MenuItem = styled(NavLink, {
     textDecoration: 'unset',
-    userSelect: 'none',
     color: 'unset',
     fontWeight: '600',
     fontSize: '16px',
@@ -46,7 +45,6 @@ export const MenuDotButton = styled('span', {
     float: 'left',
     display: 'flex',
     flexWrap: 'wrap',
-    userSelect: 'none',
     gap: 5,
     '&:hover': {
         opacity: 0.7,
