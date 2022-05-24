@@ -1,6 +1,15 @@
 import Leaft from '@/assets/leaft.png'
 import { MenuDotButton, Dot, LeaftIcon, MenuItem, StyledHeader } from './styles'
-import { useLocation, useRoutes } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
+
+const MenuButton: React.FC = () => (
+    <MenuDotButton>
+        <Dot />
+        <Dot />
+        <Dot />
+        <Dot />
+    </MenuDotButton>
+)
 
 const Header: React.FC = () => {
     const location = useLocation()
@@ -9,12 +18,7 @@ const Header: React.FC = () => {
 
     return (
         <>
-            <MenuDotButton>
-                <Dot />
-                <Dot />
-                <Dot />
-                <Dot />
-            </MenuDotButton>
+            <MenuButton />
             <StyledHeader>
                 <MenuItem color={getColorStateByPath('/')} to='/'>Home</MenuItem>
                 <MenuItem to='/about' color={getColorStateByPath('/about')}>About</MenuItem>
