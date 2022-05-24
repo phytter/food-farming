@@ -10,6 +10,8 @@ export const StyledHeader = styled('header', {
 })
 
 export const MenuItem = styled('a', {
+    textDecoration: 'unset',
+    color: 'unset',
     fontWeight: 'bold',
     fontSize: '16px',
     variants: {
