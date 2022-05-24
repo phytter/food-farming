@@ -1,9 +1,10 @@
 import { Panel } from './components'
+import { Home } from './pages'
 
 function App() {
   return (
     <Panel>
-      <h1>Food Farming</h1>
+      <Home />
     </Panel>
   )
 }
