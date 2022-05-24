@@ -3,7 +3,7 @@ import { MenuDotButton, Dot, LeaftIcon, MenuItem, StyledHeader } from './styles'
 import { useLocation } from 'react-router-dom'
 
 const MenuButton: React.FC = () => (
-    <MenuDotButton>
+    <MenuDotButton onClick={() => alert('Botão do menu clicado!')}>
         <Dot />
         <Dot />
         <Dot />
