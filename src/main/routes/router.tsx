@@ -1,6 +1,5 @@
 import { Panel } from "@/presentation/components";
-import { Home } from "@/presentation/pages";
-import React from "react";
+import { Home, About } from "@/presentation/pages";
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,7 +11,7 @@ export default function App() {
     <Router>
         <Routes>
             <Route path="/" element={<Panel><Home /></Panel>} />
-            <Route path="/about" element={<Panel><h1>About</h1></Panel>} />
+            <Route path="/about" element={<Panel><About /></Panel>} />
         </Routes>
     </Router>
   );
