@@ -12,6 +12,7 @@ export default function App() {
         <Routes>
             <Route path="/" element={<Panel><Home /></Panel>} />
             <Route path="/about" element={<Panel><About /></Panel>} />
+            <Route path="*" element={<Panel><Home /></Panel>} />
         </Routes>
     </Router>
   );

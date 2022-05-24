@@ -1,6 +1,6 @@
 import Leaft from '@/assets/leaft.png'
 import { MenuDotButton, Dot, LeaftIcon, MenuItem, StyledHeader } from './styles'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useRoutes } from 'react-router-dom'
 
 const Header: React.FC = () => {
     const location = useLocation()
@@ -16,13 +16,13 @@ const Header: React.FC = () => {
                 <Dot />
             </MenuDotButton>
             <StyledHeader>
-                <MenuItem color={getColorStateByPath('/')} href='/'>Home</MenuItem>
-                <MenuItem href='/about' color={getColorStateByPath('/about')}>About</MenuItem>
-                <MenuItem>Products</MenuItem>
+                <MenuItem color={getColorStateByPath('/')} to='/'>Home</MenuItem>
+                <MenuItem to='/about' color={getColorStateByPath('/about')}>About</MenuItem>
+                <MenuItem to='/products' color={getColorStateByPath('/products')}>Products</MenuItem>
                 <LeaftIcon src={Leaft}/>
-                <MenuItem>Recipes</MenuItem>
-                <MenuItem>FAQ</MenuItem>
-                <MenuItem>Help</MenuItem>
+                <MenuItem to='/recips' color={getColorStateByPath('/recips')}>Recipes</MenuItem>
+                <MenuItem to='/faq' color={getColorStateByPath('/faq')}>FAQ</MenuItem>
+                <MenuItem to='/help' color={getColorStateByPath('/help')}>Help</MenuItem>
             </StyledHeader>
         </>
     )

@@ -1,4 +1,5 @@
 import { styled } from '@stitches/react';
+import { NavLink } from 'react-router-dom'
 
 export const StyledHeader = styled('header', {
     marginBottom: 50,
@@ -9,7 +10,7 @@ export const StyledHeader = styled('header', {
     gap: 40
 })
 
-export const MenuItem = styled('a', {
+export const MenuItem = styled(NavLink, {
     textDecoration: 'unset',
     color: 'unset',
     fontWeight: '600',
