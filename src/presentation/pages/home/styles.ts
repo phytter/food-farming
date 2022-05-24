@@ -12,7 +12,7 @@ export const H3 = styled('h3', {
 })
 
 export const H1 = styled('h1', {
-    fontSize: 50,
+    fontSize: 60,
     color: '#414141',
     fontFamily: 'fantasy',
     textTransform: 'uppercase',
@@ -30,12 +30,18 @@ export const ReadMoreButton = styled('button', {
     marginTop: 40,
     background: 'transparent',
     border: 'solid 2px #C18E5D',
-    height: 50,
-    width: 150
+    height: 60,
+    width: 160,
+    '&:hover': {
+        opacity: 0.7,
+        cursor: 'pointer'
+    }
 })
 
 export const TextButton = styled('div', {
     display: 'inline-flex',
+    fontFamily: 'monospace',
+    userSelect: 'none',
     alignItems: 'center',
     height: '100%',
     textAlign: 'center',
@@ -58,5 +64,6 @@ export const LeaftIcon = styled('img', {
 })
 
 export const H3andIcon = styled('div', {
-    display: 'flex'
+    display: 'flex',
+    alignItems: 'baseline'
 })
